@@ -1,0 +1,55 @@
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap" rel="stylesheet">
+    <title>Torre de Hanoi</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="titulo">Torre de Hanoi</h1>
+        <p class="estadoJogo">Selecione uma Torre</p>
+        <div class="info_jogo">
+            <p>Quantidade de Movimentos: <span id="qtd">0</span></p>
+            <button class="btn_regra">Regras do jogo</button>
+        </div>
+    </header>
+    <div class="modal">
+        <div class="modal__content">
+            <p class="modal__msg">Não foi possível fazer essa jogada!</p>
+            <button id="button">Continuar</button>
+        </div>
+    </div>
+    <main id="content">
+        
+    </main>
+
+    <div id="select_dif">
+        <label>Selecione uma dificuldade: </label>
+
+        <select id="dif" name="dif">
+            <option class="opt" value="facil">Facil</option>
+            <option class="opt" value="medio">Medio</option>
+            <option class="opt" value="dificil">Dificil</option>
+        </select>
+        <button id="btnSelect">Selecionar</button>
+    </div>
+    <dialog >
+        <h1>Regras do jogo</h1>
+        <ol type="I">
+            <li>Apenas um disco pode ser movido por vez.</li>
+            <li>Cada movimento consiste de pegar o disco de cima de uma das pilhas e movê-lo para o topo de outra pilha.</li>
+            <li>Nenhum disco pode ser colocado no topo de um disco menor.</li>
+        </ol>
+
+        <button id="fechar">Fechar</button>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>
